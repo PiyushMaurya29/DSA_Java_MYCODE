@@ -1,8 +1,16 @@
 package Core_JAVA;
 
+
+class outer{
+  static class inner{
+    void display(){
+      System.out.println("I am inner class");
+    }
+  }
+}
 public class lol {
   public static void main(String[] args) {
-    System.out.println("Hello World!");
-    System.out.println("Hello World!");
+    outer.inner innerObj = new outer.inner();
+    innerObj.display();
   }
 }
