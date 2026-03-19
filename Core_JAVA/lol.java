@@ -12,5 +12,6 @@ public class lol {
   public static void main(String[] args) {
     outer.inner innerObj = new outer.inner();
     innerObj.display();
+    System.out.println("you");
   }
 }
